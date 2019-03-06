@@ -13,9 +13,6 @@ def run_guessing_game
       #puts "Your guess #{user_input} is Low."
     elsif user_input.to_i == number
       puts "You guessed the correct number!"
-      break
-    else
-      puts "awkward"
     end
     if user_input == "exit"
       puts "Goodbye!"
