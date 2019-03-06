@@ -1,3 +1,4 @@
+
 def run_guessing_game
   number = rand(1..6)
   puts "Guess a number between 1 and 6."
@@ -13,9 +14,6 @@ def run_guessing_game
       #puts "Your guess #{user_input} is Low."
     when user_input.to_i == number
       puts "You guessed the correct number!"
-      break
-    when user_input == "exit"
-      puts "Goodbye!"
       break
     end
   end
