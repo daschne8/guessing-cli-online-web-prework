@@ -15,7 +15,7 @@ def run_guessing_game
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is Low."
     elsif user_input.to_i == number
-      puts 'You guessed the correct number!''
+      puts 'You guessed the correct number!'
       break
     else
       puts "awkward"
