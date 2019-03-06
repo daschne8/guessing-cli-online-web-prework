@@ -6,6 +6,9 @@ def run_guessing_game
     puts "Enter Guess Here:"
     user_input = gets.chomp
     case
+    when user_input == "exit"
+      puts "Goodbye!"
+      break
     when user_input.to_i > number
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is High."
