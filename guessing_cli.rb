@@ -5,17 +5,16 @@ def run_guessing_game
   loop do
     puts "Enter Guess Here:"
     user_input = gets.chomp
-    case
-    when user_input == "exit"
+    if user_input == "exit"
       puts "Goodbye!"
       break
-    when user_input.to_i > number
+    elif user_input.to_i > number
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is High."
-    when user_input.to_i < number
+    elif user_input.to_i < number
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is Low."
-    when user_input.to_i == number
+    elif user_input.to_i == number
       puts "You guessed the correct number!"
       break
     end
