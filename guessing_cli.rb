@@ -17,6 +17,8 @@ def run_guessing_game
     elsif user_input.to_i == number
       puts "You guessed the correct number!"
       break
+    else
+      puts "awkward"
     end
   end
 end
