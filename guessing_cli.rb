@@ -8,13 +8,13 @@ def run_guessing_game
     if user_input == "exit"
       puts "Goodbye!"
       break
-    elif user_input.to_i > number
+    elsif user_input.to_i > number
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is High."
-    elif user_input.to_i < number
+    elsif user_input.to_i < number
       puts "The computer guessed #{number}."
       #puts "Your guess #{user_input} is Low."
-    elif user_input.to_i == number
+    elsif user_input.to_i == number
       puts "You guessed the correct number!"
       break
     end
